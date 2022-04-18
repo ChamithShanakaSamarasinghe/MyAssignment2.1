@@ -1,0 +1,411 @@
+/*I have taken these ideas from several videos but I used my own images and values when doing styling*/
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*css for banner*/
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#009688), url(Images/National\ Zoology\ Garden.jpg);
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+/*css for logo on the banner*/
+.logo4{
+    width: 140px;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+/*css for text in banner*/
+.banner-text{
+    text-align: center;
+    color:#fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 65px;
+    font-family: cursive;
+}
+.banner-text p{
+    font-size: 25px;
+    font-style: italic;
+}
+/*banner button*/
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width:150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color:#fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover{
+    color:#000;
+}
+/*header*/
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+/*navigation in the header section*/
+#topNav{
+    background-color: rgb(128, 0, 32);
+    overflow: hidden;
+}
+#topNav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 12px;
+}
+#topNav a:hover{
+    background-color: rgb(25, 25, 112);
+}
+#topNav .active{
+    background-color: rgb(0, 100, 0);
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover{
+    color: var(--main-color);
+}
+@media screen and (max-width:700px){
+    .banner-text h1{
+        font-size:44px;
+    }
+    .banner-btn a{
+        display:block;
+        margin:20px auto;
+    }
+}
+/*--feature--*/
+/*title text*/
+#feature{
+    width: 100%;
+    padding: 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h1{
+    font-size: 50px;
+}
+.title-text h4{
+    text-align: justify;
+    color: rgb(0, 128, 0);
+}
+/*css styling for images*/
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: center;
+}
+.animals{
+    flex-basis: 50%;
+}
+.animals-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.animals-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.Animal-text{
+    text-align: justify;
+}
+.animals h1{
+    text-align: justify;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+.description-of-animal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+ul{
+    list-style-type: square;
+    text-align: justify;
+}
+.Animal-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+@media screen and (max-width: 2500px){
+    .title-text h1{
+         font-size: 35px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .animals-img{
+        flex-basis: 100%;
+        
+    }
+    .animals-img img{
+        width: 100%;
+    }
+} 
+/*CSS Styling for Zoo and texts for the Zoo*/
+#Zoo{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.zoo-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.picturedescription{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.picturedescription p{
+    font-size: 11px;
+}
+.single-service:hover .picturedescription{
+    bottom: 40%;
+    opacity: 1;
+}
+@media screen and (max-width: 770px){
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .picturedescription p{
+        font-size: 24px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .picturedescription{
+        bottom: 25%;
+    }
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:500px;
+}
+/*Google Map in Contact Us page*/
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:500px;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Adding a hover effect */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Setting a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #ffff00;
+    color: white;
+  }
+    /* Youtube */
+    .fa-youtube {
+        background: #ff0000;
+        color: white;
+      }
+        /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+/* My details and also contact info of the zoo and copyrights in footer area*/
+
+/*Table in Types of Animals and Plants page for the plants that I have choosen.*/
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20pxl;
+}
+.footer-right{
+    text-align: right;
+}
+.td img{
+    width: 400px;
+    height: 300px;
+}
+.table2{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.table2 th td{
+    text-align: left;
+    padding: 8px;
+    margin-right: 5px;
+}
+.table2 tr:nth-child(odd){
+    background-color: rgba(0, 255, 0, 0.4);
+}
+.table2 tfoot {
+    font-weight: bold;
+}
+.tableinfo{
+    overflow-x: auto;
+}
+.material-icons{
+    font-family: Material Icons;
+    font-weight: normal;
+    font-size: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}

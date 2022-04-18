@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Index.css">
+        <link rel="stylesheet" href="Purchase.css">
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <title>Purchase and Donation Form</title>
+        <a href="index.html">
+            <div id="topNav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Types of Animals and Plants.html">Types of Animals and Plants</a>
+                    <a href="Activities.html">Activities</a>
+                    <a class="active" href="Purchase and Donate.html">Purchase and donate</a>
+                    <a href="Contact Us.html">Contact Us</a>
+                </nav>
+            </div>
+        </a>
+    </head>
+    <br> <br>
+    <body>
+        <section id="banner">
+            <!--images taken from google images-->
+            <img src="images/logo4.png" class="logo4">
+            <div class="banner-text">
+                <h1>
+                    Purchase and Donate
+                </h1>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-75">
+                    <div class="container-res">
+                        <form>
+                            <div class="row-res">
+                                <div class="col-50">
+                                    <h3>Purchase your tickets here</h3>
+                                    <label for="choiceOfTickets">Choice of Tickets</label>
+                                    <select id="choiceOfTickets" name="Choice of Tickets" required>
+                                        <option value="----">Please Select An Option</option>
+                                        <option value="1000, 500" >Day Pass</option>
+                                        <option value="500, 250">Student Pass</option>
+                                        <option value="5000, 2500">Foreigner Pass</option>
+                                    </select>
+                                    <br />
+                                    <br />
+                                    <label><b>Guests</b></label><br>
+                                    <input type="radio" value="ADL" id="ro" name="localadults">
+                                    <label for="ro" >Adults</label><br>
+                                    <input type="radio" value="BB" id="bb" name="localchildren">
+                                    <label for="bb" >Children</label><br>
+                                    <input type="radio" value="HB" id="hb" name="Studentpass">
+                                    <label for="hb" >Student Pass per Child</label><br> 
+                                    <input type="radio" value="FB" id="fb" name="AdultPass">
+                                    <label for="fb" >Student Pass per Adults</label><br>
+                                    <input type="radio" value="CC" id="cc" name="ForeignAdultPass">
+                                    <label for="cc" >Foreign Pass per Adult</label><br>
+                                    <input type="radio" value="NN" id="nn" name="ForeignChildPass">
+                                    <label for="nn" >Foreign Pass per Child</label><br>
+                                    <label  for="extra">Extra (optional)</label>
+                                      <select id="extra" name="extra" required>
+                                          <option value="--">Please Select An Option</option>
+                                          <option value="500">Food Token</option>
+                                          <option value="5000">Annual Pass</option>
+                                      </select><br />
+                                      <br>
+                                      <b><label class="duration">Duration</label><br></b>
+                                      <input type="radio" value="AD" id="ad" name="threehour">
+                                      <label for="ad">Adult 3 hours and children 3 hours</label><br>
+                                      <input type="radio" value="AC" id="ac" name="halfday">
+                                      <label for="ac">Adult 1/2 day and children 1/2 day</label><br>
+                                      <input type="radio" value="AB" id="ab" name="fullday">
+                                      <label for="ab">Adult full day and children full day</label><br>
+                                      <input type="radio" value="AA" id="aa" name="twodays">
+                                      <label for="aa">2 days for both Adults and Children</label>
+                                         <br>
+                                         <br>
+                                         <!--This is for the reservation button-->
+                                      <input type="button" value="Place Order" id="placeorder">
+                                      <input type="button" value="Delete Order" id="deleteorder">
+                                      <p>
+                                          <textarea id="pod" rows="4"></textarea><br>
+                                          <textarea id="deleteod" rows="2"></textarea><br>
+                                          <input type="button" id="fav" value="Add to Favourite">
+                                      </p>
+                                </div>
+                                <div>
+                                    <hr class="bod">
+                                    <p id="finalcost"><h4>Your total cost is : <span id="firstvalue">0</span></h4></p>
+                                </div><br>
+                            </div>
+                            <div class="col-50">
+                                <h3>Drop in your details over here.</h3>
+                                <label for="Name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <br>
+                                <label for="number">Telephone number</label>
+                                <input type="number" id="number" name="number" required>
+                                <br>
+                                <label for="number1">Mobile Number</label>
+                                <input type="number" id="number1" name="number" required>
+                                <br>
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" required>
+                                <br>
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" name="email" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section><br>
+        <br>
+        <h3>If you want, please kindly donate. For donations, please click the below Donation button. Thank You</h3><br>
+        <a href="Donate.html" class="button">Donations<i class="material-icons"></i></a>
+    </body>
+    <footer>
+        <section id="footer">
+            <div class="title-text">
+                <p>About us</p>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Opening hours</h1>
+                    <p>Saturday to Friday: 08:30 AM - 06:00 PM</p><br>
+                    <p>During public holidays the working hours might differ.</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Assignment done by...</h1>
+                    <p>Chamith Shanaka Smarasinghe</p><br>
+                    <p>CB009280</p>
+                    <p>Address:120 Galvihara Rd, Dehiwala-Mount Lavinia</p>
+                </div>
+            </div>
+            <h3>
+                This website is prohibited from being copied. Done by Chamith Shanaka Samarasinghe. CB009280
+            </h3>
+            <h4>
+                Copyrights intended: &copy;
+            </h4> 
+        </section>
+        <script src="PurchaseJS.js"></script>
+    </footer>
+</html>
